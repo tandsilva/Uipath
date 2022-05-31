@@ -16,7 +16,7 @@ Here are some ideas to get you started:
 - uses: Platane/snk@master
         id: snake-gif
         with:
-          github_user_name:  ELLEN2121
+          github_user_name:  tandsilva
           svg_out_path: dist/github-contribution-grid-snake.svg
 
  
