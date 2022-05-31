@@ -1,0 +1,242 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="633,2702" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="39">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.ExtractData</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="46">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence sap:VirtualizedContainerService.HintSize="625,2637" sap2010:WorkflowViewState.IdRef="Sequence_2">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Default="https://www.reinovaper.com/categoria/pod-descartavel.html" Name="strUrl" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Edge: Pod Descartável - Reino Vaper" sap:VirtualizedContainerService.HintSize="583,2545" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="IfNotOpen" ScopeGuid="5fc98401-a8d3-49c1-b49a-75900010d449" Version="V1">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="549,2329" sap2010:WorkflowViewState.IdRef="Sequence_1">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="sd:DataTable" Default="[New System.Data.DataTable]" Name="strProdutos" />
+              <Variable x:TypeArguments="x:String" Name="strTabela" />
+              <Variable x:TypeArguments="x:Int32" Name="strPaginas" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[strProdutos]" DisplayName="Extract Table Data" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column1' Name='Url'&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataNextLink' /&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;column exact='1' name='Column1' attr='href'&gt;&lt;webctrl tag='li' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='a' idx='1' /&gt;&lt;/column&gt;&lt;/extract&gt;" ExtractSimilar="True" sap:VirtualizedContainerService.HintSize="507,156" sap2010:WorkflowViewState.IdRef="NExtractData_1" LimitExtractionTo="Page" MaximumResults="3" ScopeIdentifier="5fc98401-a8d3-49c1-b49a-75900010d449" Version="V1">
+              <uix:NExtractData.NextLink>
+                <uix:TargetAnchorable BrowserURL="https://www.reinovaper.com/categoria/pod-descartavel.html" DesignTimeRectangle="1400, 716, 32, 30" FriendlyName="'A ?pagina=2'" FullSelectorArgument="&lt;webctrl aaname='                                            ' href='?pagina=2' parentid='corpo' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='                                            ' href='?pagina=2' parentid='corpo' tag='A' type='' /&gt;" Guid="8aaec04a-fbc5-40f0-b97f-b4a7ed97d4fc" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACQAAAAiCAYAAAA3WXuFAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFESURBVFhH7di/SsNQFAbwvJ+Ds0tdHJyFbl2duvoCTg6uXXRzEKc+QIeEgDTJkMHcC0lK/nz6XZsUQYnGg/ci+eCQNgncH+emhRMPjsVr2xa26rN4vu/DRgVBgCRJUBTFB5zZMt7w12maBlmWGVie5z3KGqgLUeyUMyB2il2q69p8tw5iuD5B7JIzoKqqJtCXmUBD+ceg97+Ow3FkZEDhDc7Or7HJNR6Xx7hYRfsLP49Yh9T6CjOidIS7xXiUGIiRQImCkD5heTLHbbjDdjXH7PIB6f7SdyMHIub0DeNrgzla3GM74gGXAb2sRTCMDCiPsHnemY8qDJH+4qcvAxLMBBrKBBrKBBqKU6BuDHIGxEExjmP7Y1A3SnNtrfVhUOQJG8VtYmeUUv12GRAHfRvFtx5lWRoMu9WDeMJGcYu656bDAMArt664rv7oXioAAAAASUVORK5CYII=" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Pod Descartável - Reino Vaper' /&gt;" SearchSteps="FuzzySelector, Image" />
+              </uix:NExtractData.NextLink>
+              <uix:NExtractData.Target>
+                <uix:TargetAnchorable DesignTimeRectangle="470, 228, 972, 6289" ElementType="List" FriendlyName="'UL'" FullSelectorArgument="&lt;webctrl parentid='listagemProdutos' tag='UL' /&gt;" Guid="13d12808-6297-4ca9-b0d2-7c6d42f3e9a0" InformativeScreenshot="4b85a51f7a04efe41a9c07bf0fdd490b.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Pod Descartável - Reino Vaper' /&gt;" SearchSteps="Selector" />
+              </uix:NExtractData.Target>
+            </uix:NExtractData>
+            <Sequence sap:VirtualizedContainerService.HintSize="507,954" sap2010:WorkflowViewState.IdRef="Sequence_4">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <ui:AddDataColumn x:TypeArguments="x:String" AllowDBNull="{x:Null}" AutoIncrement="{x:Null}" Column="{x:Null}" DefaultValue="{x:Null}" Unique="{x:Null}" ColumnName="NomeProduto" DataTable="[strProdutos]" DisplayName="Add Data Column" sap:VirtualizedContainerService.HintSize="334,185" sap2010:WorkflowViewState.IdRef="AddDataColumn`1_2" MaxLength="5000">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </ui:AddDataColumn>
+              <ui:AddDataColumn x:TypeArguments="x:String" AllowDBNull="{x:Null}" AutoIncrement="{x:Null}" Column="{x:Null}" DefaultValue="{x:Null}" Unique="{x:Null}" ColumnName="Preço" DataTable="[strProdutos]" DisplayName="Add Data Column" sap:VirtualizedContainerService.HintSize="334,185" sap2010:WorkflowViewState.IdRef="AddDataColumn`1_3" MaxLength="5000">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </ui:AddDataColumn>
+              <ui:AddDataColumn x:TypeArguments="x:String" AllowDBNull="{x:Null}" AutoIncrement="{x:Null}" Column="{x:Null}" DefaultValue="{x:Null}" Unique="{x:Null}" ColumnName="Marca" DataTable="[strProdutos]" DisplayName="Add Data Column" sap:VirtualizedContainerService.HintSize="334,185" sap2010:WorkflowViewState.IdRef="AddDataColumn`1_4" MaxLength="5000">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </ui:AddDataColumn>
+              <ui:AddDataColumn x:TypeArguments="x:String" AllowDBNull="{x:Null}" AutoIncrement="{x:Null}" Column="{x:Null}" DefaultValue="{x:Null}" Unique="{x:Null}" ColumnName="Descriçao" DataTable="[strProdutos]" DisplayName="Add Data Column" sap:VirtualizedContainerService.HintSize="334,185" sap2010:WorkflowViewState.IdRef="AddDataColumn`1_6" MaxLength="50000">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </ui:AddDataColumn>
+            </Sequence>
+            <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[strProdutos]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="507,890" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+              <ui:ForEachRow.Body>
+                <ActivityAction x:TypeArguments="sd:DataRow">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="473,769" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                    <Sequence.Variables>
+                      <Variable x:TypeArguments="x:String" Name="strDescricao" />
+                      <Variable x:TypeArguments="x:String" Name="strNomeProduto" />
+                      <Variable x:TypeArguments="x:String" Name="strPreco" />
+                      <Variable x:TypeArguments="x:String" Name="strMarca" />
+                    </Sequence.Variables>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uix:NGoToUrl DisplayName="Go To URL" sap:VirtualizedContainerService.HintSize="431,81" sap2010:WorkflowViewState.IdRef="NGoToUrl_1" Url="[CurrentRow(0).ToString]" Version="V1" />
+                    <uix:NGetText DisplayName="Get Text 'Pod Descartável'" sap:VirtualizedContainerService.HintSize="431,156" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="5fc98401-a8d3-49c1-b49a-75900010d449" Version="V1">
+                      <uix:NGetText.Target>
+                        <uix:TargetAnchorable BrowserURL="https://www.reinovaper.com/produto/pod-descartavel-smooth-tobacco-600-puff-5-black-sheep-plus.html" DesignTimeRectangle="816, 309, 624, 60" FriendlyName="'Pod Descartável'" FullSelectorArgument="&lt;webctrl tag='H1' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='H1' type='' /&gt;" Guid="6fa46b2e-036d-40fa-9eeb-ce6080ac3ad4" InformativeScreenshot="9da1f4ce8657b7e3714b498ff52b1591.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Pod Descartável Smooth Tobacco 600 Puff 5% Black Sheep Plus - Reino Vaper' /&gt;" SearchSteps="FuzzySelector" />
+                      </uix:NGetText.Target>
+                      <uix:NGetText.Text>
+                        <OutArgument x:TypeArguments="x:String">[strNomeProduto]</OutArgument>
+                      </uix:NGetText.Text>
+                    </uix:NGetText>
+                    <uix:NGetText DisplayName="Get Text &quot;*&quot;" sap:VirtualizedContainerService.HintSize="431,156" sap2010:WorkflowViewState.IdRef="NGetText_3" ScopeIdentifier="5fc98401-a8d3-49c1-b49a-75900010d449" ScrapingMethod="TextAttribute" Version="V1">
+                      <uix:NGetText.Target>
+                        <uix:TargetAnchorable BrowserURL="https://www.reinovaper.com/mango-grape-ice-npod-nikpod-cartucho-de-reposicao-5-2x2ml-nikbar" DesignTimeRectangle="816, 598, 624, 24" FriendlyName="'R$ 79,90'" FullSelectorArgument="&lt;webctrl idx='2' parentid='corpo' tag='STRONG' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' parentid='corpo' tag='STRONG' /&gt;" Guid="a5ec810e-3a80-4756-91b8-8ba522b5346f" InformativeScreenshot="ee19201cb2eae6e1782cd6873291b90d.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Mango Grape Ice NPOD NikPod Cartucho de Reposição 5% 2x2ml Nikbar - Reino Vaper' /&gt;" SearchSteps="FuzzySelector">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target DesignTimeRectangle="816, 666, 437, 58" ElementType="Text" FriendlyName="'Comprar'" FullSelectorArgument="&lt;webctrl aaname='                Comprar             ' parentid='corpo' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='                Comprar             ' parentid='corpo' tag='A' type='' check:text='Comprar' /&gt;" ImageBase64="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" SearchSteps="FuzzySelector, Image" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NGetText.Target>
+                      <uix:NGetText.Text>
+                        <OutArgument x:TypeArguments="x:String">[strPreco]</OutArgument>
+                      </uix:NGetText.Text>
+                    </uix:NGetText>
+                    <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="431,162" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
+                      <ui:MultipleAssign.AssignOperations>
+                        <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
+                          <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_1">
+                            <ui:AssignOperation.To>
+                              <OutArgument x:TypeArguments="x:Object">[CurrentRow(1)]</OutArgument>
+                            </ui:AssignOperation.To>
+                            <ui:AssignOperation.Value>
+                              <InArgument x:TypeArguments="x:Object">[strNomeProduto]</InArgument>
+                            </ui:AssignOperation.Value>
+                          </ui:AssignOperation>
+                          <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_2">
+                            <ui:AssignOperation.To>
+                              <OutArgument x:TypeArguments="x:Object">[CurrentRow(2)]</OutArgument>
+                            </ui:AssignOperation.To>
+                            <ui:AssignOperation.Value>
+                              <InArgument x:TypeArguments="x:Object">[strPreco]</InArgument>
+                            </ui:AssignOperation.Value>
+                          </ui:AssignOperation>
+                          <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_3">
+                            <ui:AssignOperation.To>
+                              <OutArgument x:TypeArguments="x:Object">[CurrentRow(3)]</OutArgument>
+                            </ui:AssignOperation.To>
+                            <ui:AssignOperation.Value>
+                              <InArgument x:TypeArguments="x:Object">[strMarca]</InArgument>
+                            </ui:AssignOperation.Value>
+                          </ui:AssignOperation>
+                        </scg:List>
+                      </ui:MultipleAssign.AssignOperations>
+                    </ui:MultipleAssign>
+                  </Sequence>
+                </ActivityAction>
+              </ui:ForEachRow.Body>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:ForEachRow>
+            <ui:WriteRange AddHeaders="False" DataTable="[strProdutos]" DisplayName="Write Range" sap:VirtualizedContainerService.HintSize="507,115" sap2010:WorkflowViewState.IdRef="WriteRange_1" SheetName="Sheet1" StartingCell="A1" WorkbookPath="Charucopt.xls" />
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-8, -8, 1616, 876" BrowserType="Edge" IconBase64="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" InformativeScreenshot="636b1e2f6cb0407eb4222bb68a93c4fa.png" Selector="&lt;html app='msedge.exe' title='Pod Descartável - Reino Vaper'/&gt;" Url="[strUrl]" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>

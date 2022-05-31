@@ -1,0 +1,170 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="633,1793" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="80">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Activities.Business</x:String>
+      <x:String>UiPath.Shared.Activities.Business</x:String>
+      <x:String>UiPath.CSV</x:String>
+      <x:String>UiPath.CSV.Activities</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.Core.Activities.SAP</x:String>
+      <x:String>UiPath.CV</x:String>
+      <x:String>UiPath.Shared.ObjectLibrary</x:String>
+      <x:String>UiPath.CV.Activities</x:String>
+      <x:String>UiPath.CV.Activities.Interfaces</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="52">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.CV</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.CV.Activities</AssemblyReference>
+      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <sap:WorkflowViewStateService.ViewState>
+    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+      <x:Boolean x:Key="ShouldExpandAll">False</x:Boolean>
+    </scg:Dictionary>
+  </sap:WorkflowViewStateService.ViewState>
+  <Sequence sap:VirtualizedContainerService.HintSize="552,1728" sap2010:WorkflowViewState.IdRef="Sequence_5">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="NumeroChamado" />
+      <Variable x:TypeArguments="sd:DataTable" Name="tabelaPatrimonial" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:ReadRange Range="{x:Null}" AddHeaders="True" DataTable="[tabelaPatrimonial]" DisplayName="Read Range" sap:VirtualizedContainerService.HintSize="510,87" sap2010:WorkflowViewState.IdRef="ReadRange_1" SheetName="Plan1" WorkbookPath="Planilha.xlsx" />
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Edge: Centro de Início" sap:VirtualizedContainerService.HintSize="510,1509" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" ScopeGuid="15811a61-7cf8-41b4-af27-5059183e7a8c" Version="V1">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="476,1293" sap2010:WorkflowViewState.IdRef="Sequence_8">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[tabelaPatrimonial]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="434,1199" sap2010:WorkflowViewState.IdRef="ForEachRow_2">
+              <ui:ForEachRow.Body>
+                <ActivityAction x:TypeArguments="sd:DataRow">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="376,1078" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Requisição de Serviço'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="334,216" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="15811a61-7cf8-41b4-af27-5059183e7a8c" Version="V1">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable BrowserURL="https://suporte.sp.senac.br/maximo/ui/?event=loadapp&amp;value=startcntr&amp;uisessionid=6873&amp;_tt=74hvq2ufbgifdpbianknn964cd" DesignTimeRectangle="29, 273, 414, 24" ElementType="Text" FriendlyName="'Requisição de Serviço'" FullSelectorArgument="&lt;webctrl id='FavoriteApp_SR' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl id='FavoriteApp_SR' tag='A' type='' aaname=' &amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;Requisição de Serviço' check:text='Requisição de Serviço' /&gt;" Guid="89ef79be-85a8-4028-942a-6c408dff162c" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAaIAAAAcCAYAAAAjvLveAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAPLSURBVHhe7dpPbuIwFMfxuV+P0wP0ECy4Q7e9ALPoEqlSR911T8UhMvZz/rz3bCcpBTww34+E1ODEsY30fjj0VwcAQEMEEQCgKYIIANAUQQQAaIogAgA0RRABAJoiiAAATRFEAICmTBC9Pf/uHp7ca/PeHfr2SzvsXsM9991bf1x1fO8ew9i2H/3xrM9uK3NJ/R5278v9ryXjWDHeomFcw+u1ezn2TWeX7vW4++qPAeDfkQWRL1YSTs+f/dHtieEmgdWH18MmFPxVAbbCyUH01b1s3Fp/K1wB4H4sBlH3sb/qruimnBpEP9pJAcB9OSGI7CMlf356vNa3h52U6TP2ZXZXaWcw7gLcvUxf5tFVHIN9lCU7t/FcXeTdI7Bsdzc/H0ufG3dWPlDSfOr3GqR+lnY/dv75fba7tIuKa/Ynnuu/MMT1lOvcOgf1tQ3kukobAJzZNx/N+QJaCBJdMPuCdlIQ+V1DPB4LbRzHVCClqOp+x358AU7H0xzzQCiGsfDXpuNpvr59rq+gX5v00iGTyJx0sOi1Ge6t2+W9PJzT3NL5xXWO9FrLuPR47FoDwLl9758VYpHy3/JVUSsVXvNedv1MgZTiWCuAujjmBVgcv1SRnpjQ0vcb1B6bld7X78W/1/bljLuT8frSnPRauXXr2UCOazTc254/BZQW1ivcr/QZZkEPAGc0syPKdwtjwfQvKaDl4nhyEEXxWN1n6lsH0cI3dteHvPoxFAtsLTyWQqt0H3ktB1Gi1yKtfam/1F5eaz0eOzd9fuVaUW4jiABc0uyjOSlAPhhmClLp2/SPgkgzAaHDJ/ZRC6I8pExRXQoXrfS+fi/+XRv7Kj4sZsK1EhjT+77dHsfPJL82KX2GBBGAS1r4jSh9M5+KVl7Ys6AxxTpdP7ZL4VbXy7HqXwWDFD/dlwkCO45iYMq5frypIE9F1c+vXIiTdK1us2P0xX+mgMv4XBi4tcuuNfPP7zVIa/Gqzo3c+f5z0p+Lbyt85gBwTov/rJAKky5EqXiPj4tCsTwcfXEe2vfd1vVp2jeh3RdIFSi2Lz8GWxzj2KdzVSGV8as+5D/ddBG38ymH0MCd+7wvFvyhXeZS+a1qCOHx3EKxz+effseZC6JxjCYAKyFZu7dfMzcuADgnE0SXUN9hXEAo7ttr3esuhNAq7dgA4IruK4iGb/I/+q3mPzLuyvSuDgCu676CSMRHUxTW9eJjOx6/AWjn4kF0PdPvN9cNvlulfs/i8RyAhu4oiAAAt4ggAgA0RRABAJoiiAAATRFEAICmCCIAQENd9xeBxBvu1ySgAAAAAABJRU5ErkJggg==" InformativeScreenshot="555ac2af6333d4e0290409c06e0b02bf.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Centro de Início' /&gt;" SearchSteps="FuzzySelector, Image" />
+                      </uix:NTypeInto.Target>
+                    </uix:NTypeInto>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Requisição'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="334,216" sap2010:WorkflowViewState.IdRef="NTypeInto_3" ScopeIdentifier="15811a61-7cf8-41b4-af27-5059183e7a8c" Text="[CurrentRow(4).ToString]" Version="V1">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable BrowserURL="https://suporte.sp.senac.br/maximo/ui/?event=loadapp&amp;value=sr&amp;uisessionid=645&amp;_tt=tic8qpicse7t22dmjqhjrvlgf8" DesignTimeRectangle="48, 421, 115, 25" ElementType="InputBox" FriendlyName="'INPUT m6a7dfd2f_tfrow_[…'" FullSelectorArgument="&lt;webctrl aria-role='textbox' tag='INPUT' type='text' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-role='textbox' tag='INPUT' type='text' aaname='' /&gt;" Guid="d255c37f-1367-4a94-b26d-483b2a48b693" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAHcAAAAdCAYAAACQVvO2AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAABkSURBVGhD7dExFYAwEEAxrNUV6vB1U7t1wcF/GaIgz8xsmuSGyQ2TGyY3TG6Y3DC5YXLD5IbJDZMbJjdMbpjcMLlhcsPkhskNkxsmN0xumNwwuWFyw+SG3dz1fkT8cumRmzX7ACrQH1/m9f/FAAAAAElFTkSuQmCC" InformativeScreenshot="a5944da6d79f762d476705bb8c996f2a.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Requisição de Serviço' /&gt;" SearchSteps="FuzzySelector, Image">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target DesignTimeRectangle="48, 373, 119, 43" FriendlyName="'Requisição'" FullSelectorArgument="&lt;webctrl id='m6a7dfd2f_tbod-tbd' tag='TABLE' /&gt;&lt;webctrl id='m6a7dfd2f_ttrow_[C:1]-c' tag='TH' /&gt;" FuzzySelectorArgument="&lt;webctrl id='m6a7dfd2f_tbod-tbd' tag='TABLE' /&gt;&lt;webctrl id='m6a7dfd2f_ttrow_[C:1]-c' tag='TH' type='' aaname=' ' check:text='Requisição' /&gt;" ImageBase64="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" SearchSteps="FuzzySelector, Image" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NTypeInto.Target>
+                    </uix:NTypeInto>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'IMG m6a7dfd2f-ti2_img'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="334,216" sap2010:WorkflowViewState.IdRef="NTypeInto_4" ScopeIdentifier="15811a61-7cf8-41b4-af27-5059183e7a8c" Version="V1">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable BrowserURL="https://suporte.sp.senac.br/maximo/ui/?event=loadapp&amp;value=sr&amp;uisessionid=669&amp;_tt=jvfq6ii2o5ma14p1p99ls49ls7" DesignTimeRectangle="368, 348, 18, 18" ElementType="Icon" FriendlyName="'IMG m6a7dfd2f-ti2_img'" FullSelectorArgument="&lt;webctrl id='m6a7dfd2f-ti2_img' tag='IMG' /&gt;" FuzzySelectorArgument="&lt;webctrl id='m6a7dfd2f-ti2_img' tag='IMG' type='' aaname='Filtrar Tabela' /&gt;" Guid="049d55de-82c9-4804-97f3-b6ea619d657e" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAYAAADEtGw7AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFwSURBVEhL3ZI9SwNBEED9a0YLsRA7QWxstLGxMkIUsQgSEBQs7MRG0V9gk8TgVxQVRVBUCIIxkNz9h9F3MmHnbu+KEwstHnfs7Lyd2Z2BMAzlN/gn4ofXD5nZuJDhxZoMLlQjRpeOpbx3J91ekNjvIyE+rL9IofgtG1tpyOxmU6bXz/uHjK825K3dNTk+jJhKkQIHuDEqnd++iuSTa6cm5sOIaZ/EuNSF6tlz1Gx544oR0y7tu2txrh/fI/Hc1qU3rhgxCdypu+ZjqFiTifKJN6YkxLTqrsUJglAKX/umKmfeuGLEjBTXkTVS+9XnqIDl3VtvXDFi5pQkXt9dVxizkVI9qvip1fHuUYyYSplTvRIeinXap1KkxCoH9/2cNIwYqIo5RQA8FBXyz1eljBv33O70TL6SECskMlK8PgLuVNsnxoEcRoc+eao4Cw7SjtLkucRI9C1cubsnlxji8tLOjYnnFoPK41L4kTiLvyYO5RPZb7ZHFW/7wgAAAABJRU5ErkJggg==" InformativeScreenshot="aef84b67c2dd174f911eab673b5700b5.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Requisição de Serviço' /&gt;" SearchSteps="FuzzySelector, Image" />
+                      </uix:NTypeInto.Target>
+                    </uix:NTypeInto>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into '*'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="334,216" sap2010:WorkflowViewState.IdRef="NTypeInto_7" ScopeIdentifier="15811a61-7cf8-41b4-af27-5059183e7a8c" Version="V1">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable BrowserURL="https://suporte.sp.senac.br/maximo/ui/?event=loadapp&amp;value=sr&amp;uisessionid=926&amp;_tt=41mbfjmqeba0tgclfh48a6cr2m" DesignTimeRectangle="50, 442, 68, 15" ElementType="Text" FriendlyName="'3160607'" FullSelectorArgument="&lt;webctrl id='m6a7dfd2f_tdrow_[C:1]_ttxt-lb[R:0]' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl id='m6a7dfd2f_tdrow_[C:1]_ttxt-lb[R:0]' tag='SPAN' type='' aaname='3160607' check:text='3160607' /&gt;" Guid="ba315a9f-9856-4248-beea-00dd7de778de" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEgAAAATCAYAAAAzpEtzAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGSSURBVFhH7ZU9bsMgGIZ7pp6nm88RpVIPkN1Lht6AxeoVLOUIlaIcoVsmagM2fD+vITKZwvCoKuAXvscfztvv3902ME1QhiYogypo6D/t+0ekMzexxnE1tgtrjqMyn7BmHoy9bM0X5O3Lutn+QOdTeK1MUHiYbDzao/LgIqczxs1nCwLFqPMhW8vcn+VrFNlgz6IrdjEndVMvzQtEgsSzHJd1sv2Vjrvn+lGO7c7SBaHsIkH8rcz/x47aEAQOTBjPU2uf7ZAbr5alCQK3ZCIvKHQL6pAtQctbGea/0xoPLRJ2hSsqrq2ZJUBiJ4AgX7Q7hLYhAQmKH8P0zbhuTA5TVlTNLE7IZtd5obiDtPbzZASJjWk7PySoStYDcxNF3yAfordgTpAUy8ZRNhmvmUVxXQi6Z+aJgtDmbH3RL0/drJXs95ULciL4m/KHwJaxIO0A/LuxjqVXQzt4zawAvJIJSgcFIQmyteWaFK2wdR4cyBcb0Qp6RpasjVJ2xV4YIii1/sp8ff/oghqSJihDE7TJ3f4DwC9pXSbSGIgAAAAASUVORK5CYII=" InformativeScreenshot="cddcc45693c30e184a8b616565c7c9fc.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Requisição de Serviço' /&gt;" SearchSteps="FuzzySelector, Image" />
+                      </uix:NTypeInto.Target>
+                    </uix:NTypeInto>
+                  </Sequence>
+                </ActivityAction>
+              </ui:ForEachRow.Body>
+            </ui:ForEachRow>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-8, -8, 1616, 876" BrowserType="Edge" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAABVSURBVDhPpZBRCsAgDMW8rHfytoofla2LYGYh9jUfpVhKbf0KlAaUBpQGlIb5PIvmcJFf80dsclTO2wVR2eWsLqCu/yD3dcFvUBpQGlAaUBpQHtP6ACqWSB812iptAAAAAElFTkSuQmCC" InformativeScreenshot="8185ff1195b07d5244991f2fc108e13a.png" Selector="&lt;html app='msedge.exe' title='Centro de Início'/&gt;" Url="https://suporte.sp.senac.br/maximo/ui/maximo.jsp" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>

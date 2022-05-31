@@ -1,0 +1,279 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="633,1327" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="72">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.ExtractData</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="31">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence sap:VirtualizedContainerService.HintSize="476,1262" sap2010:WorkflowViewState.IdRef="Sequence_2">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Default="https://books.toscrape.com/" Name="strUrl" />
+      <Variable x:TypeArguments="x:String" Name="variable1" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Edge: All products | Books to Scrape - Sandbox" sap:VirtualizedContainerService.HintSize="434,1170" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="3917d621-1af3-4b13-b66e-ceb0bee96ef8" Version="V1">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="376,954" sap2010:WorkflowViewState.IdRef="Sequence_1">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="sd:DataTable" Default="[New System.Data.DataTable]" Name="ExtractDataTable" />
+              <Variable x:TypeArguments="sd:DataTable" Name="LIVROS" />
+              <Variable x:TypeArguments="x:String" Name="strResultado" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[LIVROS]" DisplayName="Extract Table Data" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column1' Name='Nova coluna 1 Url'&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataNextLink' /&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;column exact='1' name='Column1' attr='href'&gt;&lt;webctrl tag='li' /&gt;&lt;webctrl tag='article' idx='1' /&gt;&lt;webctrl tag='h3' idx='1' /&gt;&lt;webctrl tag='a' idx='1' /&gt;&lt;/column&gt;&lt;/extract&gt;" ExtractSimilar="True" sap:VirtualizedContainerService.HintSize="334,156" sap2010:WorkflowViewState.IdRef="NExtractData_1" LimitExtractionTo="Page" MaximumResults="1" ScopeIdentifier="3917d621-1af3-4b13-b66e-ceb0bee96ef8" Version="V1">
+              <uix:NExtractData.NextLink>
+                <uix:TargetAnchorable BrowserURL="https://books.toscrape.com/" DesignTimeRectangle="1338, 786, 56, 32" ElementType="Text" FriendlyName="'next'" FullSelectorArgument="&lt;webctrl aaname='next' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='next' tag='A' type='' check:text='next' /&gt;" Guid="25992fed-bc31-4694-978b-99fba3f738d4" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAADwAAAAkCAYAAADVeVmEAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJrSURBVGhD7ZjLasJAFIb7bH2evklX3foIXfkCrrorVCi4cSGIqEWsICIIopzmG+dMc3MSYyoZ0x+GNhcz/zdz5sxJHqRl+gcu0na7leVyKbPZTMbjsYxGo5s3+qV/fODnEpUCPh6PslqtTEfz+VzW67Xsdjs5HA72jtuKfukfH/jBF/7wWaRC4M1mYx7IaO73e3u2WcIX/vCJX5+8wDxkOp2a0QxB+MQvvs/pLPBisTAtRPm85wIzQqHCqvCfN9MZYNYAYXEPgiO9phPAZDkWfihrtkhwwBPP3glgUrtvwYcoeOBSJYAZjaZuPVUFD1wqB0zFwiZ+j4JLKzIHzNRTuTROnwN57Azlyx5WEVy6VB0wtWkjk1UNwHDBhxwwcV69Np7Iy/OHdHuRued32wbSt1dP4h69FrXXSfK8O44EJM978z2vvODSdeyAeQupLmvazcS3dDtZqJdPe2ivP/W+T4dfQ3kC0Pw4dW8NM4yUr1bgX6CIoffhjJr/4zOIDOTvrPVfTwPW5W96tkMDNjBEQKbFw9RGSTp0gwVOz3BGCqyhbfVXwNcnrYKQLjCtg6Kh7e6tATg3aV23LfmB9bpLUpES14FyoZy6twbg3G3pusKjCDiSSVKErG16zZ6PD8ZpAJJZOxPqFyi38GhdaYmI89a8PKDWvR627gMAatUnHhVh0JqPeCp+ECq0z/tZYMQIERahrGl84teXeL3AiDXAwuchTd2y8IU/fKbXbFqFwIgsR2rngWziVC6MZvXa+zrRL/3jAz/4wl88G59TKeC4qFgYTWpTOuIt5NaNfukfH1pBldXFwKGrZcAiP6+/7N+5yj9SAAAAAElFTkSuQmCC" ScopeSelectorArgument="&lt;html app='msedge.exe' title='All products | Books to Scrape - Sandbox' /&gt;" SearchSteps="FuzzySelector, Image" />
+              </uix:NExtractData.NextLink>
+              <uix:NExtractData.Target>
+                <uix:TargetAnchorable DesignTimeRectangle="510, 281, 900, 2050" FriendlyName="'A Light'" FullSelectorArgument="&lt;webctrl tag='OL' /&gt;" Guid="25dd6095-e050-4d91-8302-80fe245c9a1a" InformativeScreenshot="fb92ab96f939498a56a1ab2fa922a5a1.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='All products | Books to Scrape - Sandbox' /&gt;" SearchSteps="Selector" />
+              </uix:NExtractData.Target>
+            </uix:NExtractData>
+            <Sequence DisplayName="Adicionar colunas  a tabela" sap:VirtualizedContainerService.HintSize="334,418" sap2010:WorkflowViewState.IdRef="Sequence_4">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <ui:AddDataColumn x:TypeArguments="x:String" AllowDBNull="{x:Null}" AutoIncrement="{x:Null}" Column="{x:Null}" DefaultValue="{x:Null}" Unique="{x:Null}" ColumnName="Titulo" DataTable="[LIVROS]" DisplayName="Add Data Column" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="AddDataColumn`1_1" MaxLength="5000">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </ui:AddDataColumn>
+              <ui:AddDataColumn x:TypeArguments="x:String" AllowDBNull="{x:Null}" AutoIncrement="{x:Null}" Column="{x:Null}" DefaultValue="{x:Null}" MaxLength="{x:Null}" Unique="{x:Null}" ColumnName="Preço" DataTable="[LIVROS]" DisplayName="Add Data Column" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="AddDataColumn`1_2">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </ui:AddDataColumn>
+              <ui:AddDataColumn x:TypeArguments="x:String" AllowDBNull="{x:Null}" AutoIncrement="{x:Null}" Column="{x:Null}" DefaultValue="{x:Null}" MaxLength="{x:Null}" Unique="{x:Null}" ColumnName="Stock" DataTable="[LIVROS]" DisplayName="Add Data Column" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="AddDataColumn`1_3">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </ui:AddDataColumn>
+              <ui:AddDataColumn x:TypeArguments="x:String" AllowDBNull="{x:Null}" AutoIncrement="{x:Null}" Column="{x:Null}" DefaultValue="{x:Null}" Unique="{x:Null}" ColumnName="Descriçao" DataTable="[LIVROS]" DisplayName="Add Data Column" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="AddDataColumn`1_4" MaxLength="5000">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </ui:AddDataColumn>
+            </Sequence>
+            <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[LIVROS]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="334,51" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+              <ui:ForEachRow.Body>
+                <ActivityAction x:TypeArguments="sd:DataRow">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="473,1192" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                    <Sequence.Variables>
+                      <Variable x:TypeArguments="x:String" Name="strTitulo" />
+                      <Variable x:TypeArguments="x:String" Name="strPrecoLivro" />
+                      <Variable x:TypeArguments="x:String" Name="strStok" />
+                      <Variable x:TypeArguments="x:String" Name="strDescricao" />
+                    </Sequence.Variables>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uix:NGoToUrl DisplayName="Go To URL" sap:VirtualizedContainerService.HintSize="431,81" sap2010:WorkflowViewState.IdRef="NGoToUrl_1" Url="[CurrentRow(0).ToString]" Version="V1" />
+                    <uix:NGetText DisplayName="Get Text 'Mesaerion: The'" sap:VirtualizedContainerService.HintSize="431,156" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="3917d621-1af3-4b13-b66e-ceb0bee96ef8" Version="V1">
+                      <uix:NGetText.Target>
+                        <uix:TargetAnchorable BrowserURL="https://books.toscrape.com/catalogue/mesaerion-the-best-science-fiction-stories-1800-1849_983/index.html" DesignTimeRectangle="815, 220, 580, 78" FriendlyName="'Mesaerion: The'" FullSelectorArgument="&lt;webctrl tag='H1' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='H1' type='' /&gt;" Guid="2dc58c18-6bb3-4f4e-a804-3baaaf80e228" InformativeScreenshot="43d9eb5ee751b9e4e7e645039f39b5d8.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Mesaerion: The Best Science Fiction Stories 1800-1849 | Books to Scrape - Sandbox' /&gt;" SearchSteps="FuzzySelector" />
+                      </uix:NGetText.Target>
+                      <uix:NGetText.Text>
+                        <OutArgument x:TypeArguments="x:String">[strTitulo]</OutArgument>
+                      </uix:NGetText.Text>
+                    </uix:NGetText>
+                    <uix:NGetText DisplayName="Get Text 'Price (incl. tax)'" sap:VirtualizedContainerService.HintSize="431,156" sap2010:WorkflowViewState.IdRef="NGetText_2" ScopeIdentifier="3917d621-1af3-4b13-b66e-ceb0bee96ef8" Version="V1">
+                      <uix:NGetText.Target>
+                        <uix:TargetAnchorable BrowserURL="https://books.toscrape.com/catalogue/mesaerion-the-best-science-fiction-stories-1800-1849_983/index.html" DesignTimeRectangle="777, 469, 617, 37" ElementType="Text" FriendlyName="'£37.59'" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='4' tag='TD' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='TD' /&gt;" Guid="1d8c7d88-5daf-4da0-a435-448af3a820e4" InformativeScreenshot="771761ef688e88a65e43c65926e15fce.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Mesaerion: The Best Science Fiction Stories 1800-1849 | Books to Scrape - Sandbox' /&gt;" SearchSteps="FuzzySelector">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                              <uix:Target DesignTimeRectangle="205, 469, 573, 37" ElementType="Text" FriendlyName="'Price (incl. tax)'" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl aaname='Price (incl. tax)' tag='TH' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl aaname='Price (incl. tax)' tag='TH' type='' check:text='Price (incl. tax)' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAkEAAAApCAYAAAAyPP2zAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAM5SURBVHhe7drRbeowAAXQtxNzlVVQB3kSnaTqAAxQqQvwlZeA7SSOQ0iB1wqfI10JSIjt/HDl8KcJjsejiIiISDVJJehwOIiIiIhUk1SCAABqogQBAFVSggCAKilBAECVlCAAoEpKEABQJSUIAKiSEgQAVEkJAgCqpAQBAFVSggCAKilBAECVlCAAoEpXl6Cvt22z2WwK2TUf4Zw5H6/nc3fv4YO7+2r2L+0YL/v21f3Hi2vfvnVXv073nTXnX3JaT1gbAHAfdyhBXZaL0EO9707zeFTJWluCvlOaLnrw+gCgRqtL0PiHPezAbLbN/rN9+7lvtu05m5ddszt9fj6/tDMzLlXh+8lHs0vH2rxeqlhxDn0Ry8dL79/C/E7Ji9v8mGtKzXhdbcIOztznnXQsfhbvY5pjmJvdIAC4m8eUoJTz53kpmRSCwbmTMhIyW0BS8eoLwlwJmiQVnfKY8Xh57WXFshN2cvL014v3sZvz8HU4nN9nAOBm93kcNtnBGP9Yj0tJLBz9OaOSEQrDtCDMPHKLBWOwczNbguI58Tth3mltk1J0HnNNCeosnl+Y86RADo+14jX7YgQA3OL2EjR8RFPYlemMSsnMOdHsODO7IKXCMVeC+gIxfrw0PT62WGoys+cvFJ1U1gqFb+0cAIDLbnwclnloCSqXlNK8fl0Jynd+SjtB7UziY7Au+VzWzgEAuOz/l6D0qGnwQz8sBeH1twtHa20Jitfo5z3+D87aApKfn4+fxhuUoPRZTHYP184BALjsB0pQ4Qf/lPi4qy9Jo2TXTAq7KmtL0OyY4Zr52pfuxXh9u+ZvGH+SNOc4/vkexPkOrx+v2a8BALjFj5Sgzrgo5D/ueSmZ+VP0SV5opuMtl6BONubgWL725XsxvFY39+H7ruiM/+w9KT3xPqZiuPDncABgtatL0G92LhHPXBBKpQ0AuMVTlKD4SOxpHxU9+/oA4Ac8RwmKj4sG/wt6JqedLrtAAHBXT1KCAADWUYIAgCopQQBAlZQgAKBKShAAUCUlCACokhIEAFRJCQIAqqQEAQBVUoIAgCqlEnQ4HERERESqSSpBx+NRREREpJooQSIiIlJhjs0/aYSHExXCQuEAAAAASUVORK5CYII=" SearchSteps="FuzzySelector, Image" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NGetText.Target>
+                      <uix:NGetText.Text>
+                        <OutArgument x:TypeArguments="x:String">[strPrecoLivro]</OutArgument>
+                      </uix:NGetText.Text>
+                    </uix:NGetText>
+                    <uix:NGetText DisplayName="Get Text 'Availability'" sap:VirtualizedContainerService.HintSize="431,156" sap2010:WorkflowViewState.IdRef="NGetText_3" ScopeIdentifier="3917d621-1af3-4b13-b66e-ceb0bee96ef8" Version="V1">
+                      <uix:NGetText.Target>
+                        <uix:TargetAnchorable BrowserURL="https://books.toscrape.com/catalogue/mesaerion-the-best-science-fiction-stories-1800-1849_983/index.html" DesignTimeRectangle="777, 449, 617, 37" ElementType="Text" FriendlyName="'In stock (19 available)'" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='6' tag='TD' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='TD' /&gt;" Guid="7a0edeb1-1642-41a2-b323-0a3cf91c364e" InformativeScreenshot="17dbe724940a39f32ad25641f436047a.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Mesaerion: The Best Science Fiction Stories 1800-1849 | Books to Scrape - Sandbox' /&gt;" SearchSteps="FuzzySelector">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                              <uix:Target DesignTimeRectangle="205, 449, 573, 37" ElementType="Text" FriendlyName="'Availability'" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl aaname='Availability' tag='TH' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl aaname='Availability' tag='TH' type='' check:text='Availability' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAkEAAAApCAYAAAAyPP2zAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAALRSURBVHhe7dvfTdtQGIfh7pS5mjV6aSF1kLBCF0AMkAGQWMBXLo7P8Z9jJ7HbIGG+55F+UklDnHD16hh+NEld12ZmZmZh1kfQ+Xw2MzMzC7M+ggAAIhFBAEBIIggACEkEAQAhiSAAICQRBACEJIIAgJBEEAAQkggCAEISQQBASCIIAAhJBAEAIYkgACCkf4ig16Y6HJpDu5+n5j09+hBvp+Y4et335+PlOsfndVd5fereV/WSHigVr7/qei9Vc3h6TV8AAN/F9ghqo6ANh8uOzektPf4JHh5BpTKKSvmziiAA+HY2RtB7c/rZxU/1NA+ULkKmYTQLk0lEtauaPjHunszk6w+bX//jWs/pdS67/vo3rzd7n7+a3+mzD59v+Hl8ZgwCAI+3LYLG0bB0ipLCYQiTfOsshUj+nnL5pOVWlHzIkTPdECDL//+xK9GzLYKq5k8ZZUs/AwBgFzZF0DRKlk5BUvTkKLh3O2lLlCwoT5n6COqvlyMsvcet1yvff35++vre+wMAvq4NETSPnqUI6EKke87431OjX65utzGC8uN50wiaXm8SSv8bQf3PoDvZuv75AICvbn0E5WBY3Oj3bvpbYqfpqVDrToTci5JJ0Kz4uvXYCBqeU70Up14AwK6sjqAcE9c2hMf0lGd8inM1MlZFSX7dHFzDL0mXEfRpt8Na+XvSxp8PANiPlRFUxMRIDoel05Ly+cPjxTZF0HyzCCp35fVXR9Bl+bMM8eVWGADs17oIKk9sxvqTkRt/it4bB0QXL124LJ/U3IyS9jn5+SnA+ltfj/gT+Yvl4Oljbvb5AIC92PCL0WTzWAIA9kYEbZZPh9wKA4A9E0FbjG7HOQUCgH0TQQBASCIIAAhJBAEAIYkgACAkEQQAhCSCAICQRBAAEJIIAgBCEkEAQEgiCAAIqY+g8/lsZmZmFmZ9BNV1bWZmZhZmIsjMzMwCrm7+AhmaDOM0A5OqAAAAAElFTkSuQmCC" SearchSteps="FuzzySelector, Image" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NGetText.Target>
+                      <uix:NGetText.Text>
+                        <OutArgument x:TypeArguments="x:String">[strStok]</OutArgument>
+                      </uix:NGetText.Text>
+                    </uix:NGetText>
+                    <uix:NGetText DisplayName="Get Text 'Product Description'" sap:VirtualizedContainerService.HintSize="431,156" sap2010:WorkflowViewState.IdRef="NGetText_4" ScopeIdentifier="3917d621-1af3-4b13-b66e-ceb0bee96ef8" Version="V1">
+                      <uix:NGetText.Target>
+                        <uix:TargetAnchorable BrowserURL="https://books.toscrape.com/catalogue/mesaerion-the-best-science-fiction-stories-1800-1849_983/index.html" DesignTimeRectangle="205, 335, 1190, 200" ElementType="Text" FriendlyName="'Andrew Barger,'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;article&amp;gt;p' isleaf='1' tag='P' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' isleaf='1' tag='P' /&gt;" Guid="e924166e-0eec-453c-a088-1e29d8f3ec15" InformativeScreenshot="865813b4b894807b2b39db36792048c8.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Mesaerion: The Best Science Fiction Stories 1800-1849 | Books to Scrape - Sandbox' /&gt;" SearchSteps="FuzzySelector">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                              <uix:Target DesignTimeRectangle="205, 257, 1190, 48" FriendlyName="'Product Description'" FullSelectorArgument="&lt;webctrl tag='H2' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='H2' type='' aaname='Product Description' check:text='Product Description' /&gt;" ImageBase64="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" SearchSteps="FuzzySelector, Image" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NGetText.Target>
+                      <uix:NGetText.Text>
+                        <OutArgument x:TypeArguments="x:String">[strDescricao]</OutArgument>
+                      </uix:NGetText.Text>
+                    </uix:NGetText>
+                    <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="431,193" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
+                      <ui:MultipleAssign.AssignOperations>
+                        <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
+                          <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_1">
+                            <ui:AssignOperation.To>
+                              <OutArgument x:TypeArguments="x:Object">[CurrentRow(1)]</OutArgument>
+                            </ui:AssignOperation.To>
+                            <ui:AssignOperation.Value>
+                              <InArgument x:TypeArguments="x:Object">[strTitulo]</InArgument>
+                            </ui:AssignOperation.Value>
+                          </ui:AssignOperation>
+                          <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_2">
+                            <ui:AssignOperation.To>
+                              <OutArgument x:TypeArguments="x:Object">[CurrentRow(2)]</OutArgument>
+                            </ui:AssignOperation.To>
+                            <ui:AssignOperation.Value>
+                              <InArgument x:TypeArguments="x:Object">[strPrecoLivro]</InArgument>
+                            </ui:AssignOperation.Value>
+                          </ui:AssignOperation>
+                          <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_3">
+                            <ui:AssignOperation.To>
+                              <OutArgument x:TypeArguments="x:Object">[CurrentRow(3)]</OutArgument>
+                            </ui:AssignOperation.To>
+                            <ui:AssignOperation.Value>
+                              <InArgument x:TypeArguments="x:Object">[strStok]</InArgument>
+                            </ui:AssignOperation.Value>
+                          </ui:AssignOperation>
+                          <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_4">
+                            <ui:AssignOperation.To>
+                              <OutArgument x:TypeArguments="x:Object">[CurrentRow(4)]</OutArgument>
+                            </ui:AssignOperation.To>
+                            <ui:AssignOperation.Value>
+                              <InArgument x:TypeArguments="x:Object">[strDescricao]</InArgument>
+                            </ui:AssignOperation.Value>
+                          </ui:AssignOperation>
+                        </scg:List>
+                      </ui:MultipleAssign.AssignOperations>
+                    </ui:MultipleAssign>
+                  </Sequence>
+                </ActivityAction>
+              </ui:ForEachRow.Body>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:ForEachRow>
+            <ui:WriteRange AddHeaders="False" DataTable="[LIVROS]" DisplayName="Write Range" sap:VirtualizedContainerService.HintSize="334,115" sap2010:WorkflowViewState.IdRef="WriteRange_1" SheetName="Sheet1" StartingCell="A1" WorkbookPath="Extracao1.xlsx" />
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-8, -8, 1616, 876" BrowserType="Edge" IconBase64="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" InformativeScreenshot="33997b7fc09e33c6205d065b96e18ba7.png" Selector="&lt;html app='msedge.exe' title='All products | Books to Scrape - Sandbox'/&gt;" Url="[strUrl]" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
