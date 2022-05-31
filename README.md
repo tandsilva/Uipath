@@ -13,3 +13,10 @@ Here are some ideas to get you started:
 - 📫 How to reach me: ...
 - 😄 Pronouns: ...
 - ⚡ Fun fact: ...
+- uses: Platane/snk@master
+        id: snake-gif
+        with:
+          github_user_name:  ELLEN2121
+          svg_out_path: dist/github-contribution-grid-snake.svg
+
+ 
