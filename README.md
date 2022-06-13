@@ -22,7 +22,7 @@
     
 </div>
  
-  ![Snake animation](https:// https://play.google.com/store/apps/details?id=com.ssaurel.matrixeffect)
+  ![Snake animation]((https://github.com/JefersonLucas/the-matrix-effect/blob/master/translate/en/README.md)
 
 </div>
  
